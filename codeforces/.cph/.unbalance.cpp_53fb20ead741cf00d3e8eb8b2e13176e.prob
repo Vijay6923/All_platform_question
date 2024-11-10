@@ -1,0 +1,1 @@
+{"name":"Local: unbalance","url":"/Users/vijaykumar/Desktop/CP_QUESTIONS/codeforces/unbalance.cpp","tests":[{"id":1731219124410,"input":"6\n100011\n","output":"2\n100 011\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/vijaykumar/Desktop/CP_QUESTIONS/codeforces/unbalance.cpp","group":"local","local":true}

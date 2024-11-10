@@ -1,27 +1,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
         int n;
         cin>>n;
         int arr[n];
         for(int i=0;i<n;i++){
             cin>>arr[i];
         }
-        int a= INT_MAX;
+        bool flag=true;
         for(int i=0;i<n;i++){
-            if(arr[i]<a){
-                a=arr[i];
+            if(arr[i]==1){
+                flag=false;
             }
+
         }
-        int b=arr[0];
-        if(a==b){
-            cout<<"YES"<<endl;
+        if(flag==false){
+            cout<<"HARD"<<endl;
+
         }
         else{
-            cout<<"NO"<<endl;
+            cout<<"EASY"<<endl;
         }
-    }
+
+        
+    
+    
 }
