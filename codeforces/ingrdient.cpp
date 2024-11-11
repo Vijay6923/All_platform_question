@@ -1,21 +1,15 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
-
 int main() {
     int t;
     cin >> t;
-
     while (t--) {
         int n, k;
         cin >> n >> k;
-
         vector<int> a(n);
         for (int i = 0; i < n; ++i) {
             cin >> a[i];
         }
-
         int ans = 0;
         for (int p = 2; p * p <= k; ++p) {
             int power_p = 0;
@@ -23,7 +17,6 @@ int main() {
                 k /= p;
                 power_p++;
             }
-
             for (int i = 0; i < n; ++i) {
                 int count_p = 0;
                 while (a[i] % p == 0) {
@@ -34,7 +27,7 @@ int main() {
             }
         }
 
-        if (k > 1) { // Handle the last prime factor (if any)
+        if (k > 1) { 
             for (int i = 0; i < n; ++i) {
                 ans += a[i] % k;
             }
