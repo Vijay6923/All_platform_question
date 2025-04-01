@@ -6,18 +6,11 @@ int main(){
     while(t--){
         int n,k;
         cin>>n>>k;
-        if(n%2!=0 && k%2!=0){
+        if(n%2==0 || (n-k)%2==0){
             cout<<"yes"<<endl;
-            
-        }
-        else if(n%2==0 && k%2!=0){
-            cout<<"yes"<<endl;
-        }
-        else if(n%2!=0 && k%2==0){
-            cout<<"no"<<endl;
         }
         else{
-            cout<<"yes"<<endl;
+            cout<<"no"<<endl;
         }
     }
 }
