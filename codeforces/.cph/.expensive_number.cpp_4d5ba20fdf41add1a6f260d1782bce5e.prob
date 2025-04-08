@@ -1,0 +1,1 @@
+{"name":"Local: expensive_number","url":"/Users/vijaykumar/Desktop/CP_QUESTIONS/codeforces/expensive_number.cpp","tests":[{"id":1744127079931,"input":"4\n666\n13700\n102030\n7\n","output":"2\n4\n3\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/vijaykumar/Desktop/CP_QUESTIONS/codeforces/expensive_number.cpp","group":"local","local":true}
