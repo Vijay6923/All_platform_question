@@ -7,19 +7,16 @@ int main(){
         int n;
         cin>>n;
         vector<int>arr(n);
-        int mn=INT_MAX;
+        int sum=0;
         for(int i=0;i<n;i++){
             cin>>arr[i];
-            if(arr[i]<mn){
-                mn=arr[i];
-            }
+            sum +=arr[i];
+
         }
-        if(mn==arr[0]){
-            cout<<"YES"<<endl;
-        }
-        else{
-            cout<<"NO"<<endl;
-        }
+        if(sum%2==0) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+        
+        
         
     }
 }
