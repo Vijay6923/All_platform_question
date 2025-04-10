@@ -1,15 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n,x;
+    long long n,x;
     cin>>n>>x;
-    vector<int>arr(n);
+    vector<long long>arr(n);
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int sum=0;
-    int count=0;
-    unordered_map<int,int>m;
+    long long sum=0;
+    long long count=0;
+    unordered_map<long long,long long>m;
     for(int i=0;i<n;i++){
         sum+=arr[i];
         if(sum==x){
