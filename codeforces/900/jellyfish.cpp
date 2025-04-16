@@ -10,12 +10,13 @@ int main(){
         for(int i=0;i<n;i++){
             cin>>arr[i];
         }
-        long long sum = 0;
+        
+        long long res = 0;
         for(int i = 0; i < n; ++i) {
-            sum += min(arr[i], a - 1);
+            res += min(arr[i], a - 1);
         }
 
-        cout << b + sum << '\n';
+        cout << b + res << '\n';
     }
     
 }
