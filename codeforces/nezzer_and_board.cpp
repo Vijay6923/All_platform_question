@@ -10,12 +10,12 @@ int main(){
         for(long long i=0;i<n;i++){
             cin>>arr[i];
         }
-        long long gcd=arr[0];
+        long long gcd=0;
         for(long long i=1;i<n;i++){
-            gcd=__gcd(arr[0],arr[i]);
+            gcd=__gcd(arr[i]-arr[0], gcd);
             
         }
-        if(k%gcd==0){
+        if((k-arr[0])%gcd==0){
             cout<<"yes"<<endl;
         }
         else{
@@ -24,3 +24,4 @@ int main(){
         
         
     }
+}
