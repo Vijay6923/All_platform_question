@@ -10,9 +10,10 @@ int main() {
     }
     int m;
     cin >> m;
+    // binary search
     while (m--) {
         int q;
-        cin >> q;
+        cin >> q; 
         int l = 0, r = n - 1, ans = -1;
         while (l <= r) {
             int mid = (l + r) / 2;
