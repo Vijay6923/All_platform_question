@@ -8,6 +8,7 @@ bool isPrime(ll n) {
     }
     return true;
 }
+// main function
 int main() {
     ll n;
     cin >> n;
