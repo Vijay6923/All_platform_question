@@ -8,6 +8,7 @@ int main() {
         cin >> y >> x;
         long long n = max(y, x);
         long long ans;
+        // tricky question...
 
         if (y > x) {
             if (n % 2 == 0) {
