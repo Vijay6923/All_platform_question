@@ -11,13 +11,16 @@ int maxAdjacentDistance(vector<int>& nums) {
 
         
     }
+    // circular array
 int main(){
     int n;
     cin>>n;
     vector<int>nums(n);
+
     for(int i=0;i<n;i++){
         cin>>nums[i];
     }
-    cout<<maxAdjacentDistance(nums)<<endl;
+    int ans=maxAdjacentDistance(nums)<<endl;
+    cout<<ans<<endl;
 
 }
