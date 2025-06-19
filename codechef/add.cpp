@@ -4,6 +4,7 @@ typedef long long ll;
 bool isFeasible(vector<ll>& A, vector<ll>& B, ll maxVal) {
     int N = A.size();
     ll supply = 0, capacity = 0;
+    //  comment to understand
 
     for (int i = 0; i < N; ++i) {
         ll need = maxVal - A[i];
@@ -37,22 +38,14 @@ ll minimizeMax(vector<ll>& A, vector<ll>& B) {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    int T;
-    cin >> T;
-
-    while (T--) {
+    int t;
+    cin >> t;
+    while (t--) {
         int N;
         cin >> N;
         vector<ll> A(N), B(N);
-
         for (int i = 0; i < N; ++i) cin >> A[i];
         for (int i = 0; i < N; ++i) cin >> B[i];
-
-        cout << minimizeMax(A, B) << '\n';
+        cout << minimizeMax(A, B) <<endl;
     }
-
-    return 0;
 }
