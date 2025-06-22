@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     vector<string> divideString(string s, int k, char fill) {
@@ -7,3 +10,6 @@ public:
         return res;
     }
 };
+int main(){
+    
+}
