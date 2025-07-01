@@ -1,0 +1,1 @@
+{"name":"Local: common_divisors","url":"/Users/vijaykumar/Desktop/CP_QUESTIONS/VJUDGE/common_divisors.cpp","tests":[{"id":1745557240440,"input":"6\n6 90 12 30 18 18","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/vijaykumar/Desktop/CP_QUESTIONS/VJUDGE/common_divisors.cpp","group":"local","local":true}
