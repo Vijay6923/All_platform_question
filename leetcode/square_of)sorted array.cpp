@@ -17,7 +17,7 @@ vector<int> sortedSquares(vector<int>& nums) {
     }
     return res;
 }
-
+// main funtion
 int main() {
     vector<int> nums = {-7, -3, 2, 3, 11};
     vector<int> ans = sortedSquares(nums);
