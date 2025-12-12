@@ -1,22 +1,30 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main(){
     string s;
     cin >> s;
     int n = s.length();
-    int ans = 0;
-    int count = 1;
 
-    for(int i = 1; i < n; i++) {
-        if(s[i] == s[i - 1]) {
+    int i = 0;
+    int j = 1;
+    int count = 1; 
+    int ans = 1;  
+
+    while (j < n) {
+        if (s[i] == s[j]) {
             count++;
-        } else {
+            j++; 
+        } 
+        else {
             ans = max(ans, count);
-            count = 1;
+            count = 1;     
+            i = j;         
+            j++;
         }
     }
+
     ans = max(ans, count);
+
     cout << ans << endl;
-    return 0;
 }
